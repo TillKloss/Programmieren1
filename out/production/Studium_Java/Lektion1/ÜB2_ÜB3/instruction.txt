@@ -1,0 +1,11 @@
+Lektion2.ÜB1:
+ -Code in einen beliebigen Editor schreiben
+ -Datei in Application.java umbenennen
+ -Terminal aufrufen und zum Dateipfad der .java Datei navigieren
+ -Datei mit "javac Application.java" kompilieren
+ -Kompilierte Datei mit "java Application" ausführen
+
+ÜB3:
+ -Application Klasse anlegen
+ -Main Methode schreiben
+ -Programm innerhalb der IDE ausführen
