@@ -26,8 +26,10 @@ public class Main {
             return;
         }
         else {
-            System.out.printf("Deine Eingabe: %s/%s\nDeine Eingabe ist ungültig und besitzt kein Ausgabewert.\n",
-                    characterOne, characterTwo);
+            String msg = String.format("\nDeine Eingabe: %s/%s\nDeine Eingabe ist ungültig und besitzt " +
+                            "kein Ausgabewert.\n",
+                            characterOne, characterTwo);
+            throw new RuntimeException(msg);
         }
     }
 
