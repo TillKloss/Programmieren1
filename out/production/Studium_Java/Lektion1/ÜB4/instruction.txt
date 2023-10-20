@@ -1,6 +1,0 @@
-Lektion1.ÜB4:
- -Main Klasse anlegen
- -Main Methode definieren
- -Variable mit Ergebnis der Rechnung initialisieren
- -Variable ausgeben
- -Programm ausführen
