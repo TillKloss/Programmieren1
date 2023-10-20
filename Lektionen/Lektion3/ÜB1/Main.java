@@ -2,11 +2,15 @@ package Lektion3.ÜB1;
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Ganze Zahl eingeben:");
-        String userInput = scanner.nextLine();
-        double rest = Double.parseDouble(userInput) % 7;
-        System.out.printf("Der Rest beträgt %s.", rest);
+        try {
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Ganze Zahl eingeben:");
+            double userInput = scanner.nextDouble();
+            double rest = userInput % 7;
+            System.out.printf("Der Rest beträgt %s.", rest);
+        } catch (Exception exception) {
+            System.out.println("Überprüfen Sie Ihre Eingabe. Es sind nur ganze Zahlen erlaubt.");
+        }
     }
 }
 
