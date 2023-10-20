@@ -13,13 +13,14 @@ public class Main {
         }
     }
 
-    public static Integer getUserInput() {
+    public static Integer getUserInput() throws InterruptedException {
         try {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Einabe einer beliebigen Ganzzahl:");
-            return Integer.parseInt(scanner.nextLine());
+            return scanner.nextInt();
         } catch (Exception exception) {
             System.out.println("Ungültige Eingabe!");
+            Thread.sleep(2000);
             getUserInput();
         }
         return 0;
