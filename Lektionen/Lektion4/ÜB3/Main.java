@@ -24,7 +24,7 @@ public class Main {
         try {
             return scanner.nextInt();
         } catch (Exception exception) {
-            throw new RuntimeException("\nUngültige Eingabe");
+            throw new RuntimeException("\nUngültige Eingabe"); //
         }
     }
 
