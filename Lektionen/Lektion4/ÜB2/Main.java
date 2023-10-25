@@ -3,7 +3,6 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
-        // (1/2)*g*(t^2)
         double number = getUserInput();
         for (int i = 1; number >= i; i++) {
             System.out.printf("\nZeit: %s Sekunden: Zurückgelegte Strecke: %.6f m",
