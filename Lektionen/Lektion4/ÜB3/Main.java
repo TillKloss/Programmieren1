@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         int number = getUserInput();
-        if (number == 1) {
+        if (number <= 1) {
             System.out.printf("Die von Ihnen eingegebene Zahl '%s', ist keine Primzahl.", number);
             return;
         }

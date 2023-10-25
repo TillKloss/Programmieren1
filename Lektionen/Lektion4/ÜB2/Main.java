@@ -6,8 +6,7 @@ public class Main {
         double number = getUserInput();
         for (int i = 1; number >= i; i++) {
             System.out.printf("\nZeit: %s Sekunden: Zurückgelegte Strecke: %.6f m",
-                   // i, (0.5)*9.80665*((number-i)*(number-i)));
-                    i, (0.5)*9.80665*((i)*(i)));
+                    i, 0.5 * 9.80665 * i * i);
             Thread.sleep(1000);
         }
     }
