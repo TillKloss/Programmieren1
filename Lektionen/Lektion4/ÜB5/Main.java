@@ -1,4 +1,4 @@
-package Lektion4.ÜB4;
+package Lektion4.ÜB5;
 
 import java.util.Scanner;
 
