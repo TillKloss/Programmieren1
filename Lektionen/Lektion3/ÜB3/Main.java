@@ -8,7 +8,7 @@ public class Main {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Geben Sie ein Einzelzeichen ein:");
             String userInput = scanner.nextLine();
-            if (userInput.length() > 1) {
+            if (userInput.length() != 1) {
                 System.out.println("Ungültige Eingabe!");
                 return;
             }
