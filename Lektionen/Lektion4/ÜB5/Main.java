@@ -19,6 +19,7 @@ public class Main {
         System.out.print("Geben Sie bitte eine Zahl ein: ");
         try {
             int number = scanner.nextInt();
+            scanner.close();
             if (number > 1000000 || number < 1) {
                 System.out.println("FEHLER - Zahl ist ungueltig.");
                 getUserInput();

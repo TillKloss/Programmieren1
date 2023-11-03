@@ -16,9 +16,6 @@ public class Main {
             System.out.println("Pizzapreis:");
             double price2 = scanner.nextDouble();
 
-            //double pizzaArea1 = (Math.PI * ((double) pizza1 / 2) * (Math.PI * ((double) pizza1 / 2)));
-            //double pizzaArea2 = (Math.PI * ((double) pizza2 / 2) * (Math.PI * ((double) pizza2 / 2)));
-
             double pizzaArea1 = Math.PI * (((double) pizza1 / 2) * ((double) pizza1 / 2));
             double pizzaArea2 = Math.PI * (((double) pizza2 / 2) * ((double) pizza2 / 2));
 

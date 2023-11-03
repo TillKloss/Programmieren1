@@ -6,6 +6,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Matrikelnummer eingeben:");
         String userInput = scanner.nextLine();
+        scanner.close();
 
         if (userInput.length() != 7) {
             System.out.println("Ungültige Matrikelnummer");

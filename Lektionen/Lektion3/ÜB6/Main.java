@@ -8,6 +8,8 @@ public class Main {
             System.out.println("Geben Sie eine Jahreszahl ein: ");
             int year = scanner.nextInt();
 
+            scanner.close();
+
             if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
                 System.out.println(year + " ist ein Schaltjahr.");
             } else {
