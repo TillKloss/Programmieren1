@@ -1,7 +1,7 @@
 package Lektion6.ÜB1;
 
 import java.util.Scanner;
-
+//
 public class Main {
     public static void main(String[] args) {
         Double[] values = getUserInput();
