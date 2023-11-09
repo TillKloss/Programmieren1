@@ -2,12 +2,16 @@ package Lektion5.ÜB1;
 
 public class Main {
     public static void main(String[] args) {
-        int i = 1;
-        double calc;
+        int k = 1;
+        double calc = 0;
+        double prevoiousCalc = 0;
         do {
-            calc = 6 * ((double) 1 /(i*i));
+            prevoiousCalc = calc;
+            calc += 6 * ((double) 1 /(k*k));
             System.out.println(calc);
-            i++;
-        } while (calc >= 1e-5);
+            k++;
+            System.out.println(k);
+        } while (Math.abs(calc - prevoiousCalc) >= 1e-5);
+        System.out.println(calc);
     }
 }

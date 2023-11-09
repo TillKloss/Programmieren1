@@ -8,18 +8,19 @@ public class Main {
         System.out.println("Anzahl der Rechtecke");
         int n = scanner.nextInt();
 
+        scanner.close();
+
         double piApproximation = calculatePi(n);
-        System.out.println("Approximation von π: " + piApproximation);
+        System.out.println("Approximation von pi: " + piApproximation);
     }
 
     public static double calculatePi(int n) {
         double sum = 0.0;
         double width = 1.0 / n;
         for (int i = 0; i < n; i++) {
-            double x = (i + 0.5) * width; // x-Koordinate des Mittelpunkts des Rechtecks
-            double height = 4.0 / (1.0 + x * x); // Höhe des Rechtecks
+            double x = (i + 0.5) * width;
+            double height = 4.0 / (1.0 + x * x);
             sum += height;
-            System.out.printf("x: %s; height: %s; sum: %s; return: %s\n",x,height,sum, sum * width);
         }
         return sum * width;
     }

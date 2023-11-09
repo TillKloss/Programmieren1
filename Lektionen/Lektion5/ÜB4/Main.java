@@ -3,7 +3,7 @@ package Lektion5.ÜB4;
 public class Main {
     public static double customSqrt(double number, double epsilon) {
         if (number < 0) {
-            throw new IllegalArgumentException("Die Quadratwurzel von negativen Zahlen ist undefiniert.");
+            throw new IllegalArgumentException("Natürliche Zahl angeben!");
         }
 
         double guess = number / 2.0;

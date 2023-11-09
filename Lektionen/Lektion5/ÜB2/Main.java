@@ -11,6 +11,8 @@ public class Main {
             System.out.println("Bitte geben Sie die Potenz an:");
             int n = scanner.nextInt();
 
+            scanner.close();
+
             if (n == 0) {
                 System.out.println(1);
             } else if (n > 0) {

@@ -15,6 +15,8 @@ public class Main {
                 sum += input;
             } while (input != 0);
             System.out.printf("Summe: %s", sum);
+            scanner.close();
+
         } catch (Exception exception) {
             throw new RuntimeException("Ungültige Eingabe!");
         }
