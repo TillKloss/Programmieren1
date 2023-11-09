@@ -38,8 +38,6 @@ public class Main {
             double number = scanner.nextDouble();
             System.out.println("Gebe die Anzahl der Nachkommastellen auf die gerundet werden soll an.");
             int decimalPoints = scanner.nextInt();
-
-            // Verwenden Sie Object[], um sowohl double als auch int zurückzugeben
             Object[] returnValues = new Object[]{number, decimalPoints};
             return returnValues;
         } catch (Exception exception) {
