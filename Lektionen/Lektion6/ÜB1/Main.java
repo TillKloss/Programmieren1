@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Double[] values = getUserInput();
-        double number = values[0];
-        double decimalPoints = values[1];
+        Object[] values = getUserInput();
+        double number = (double) values[0];
+        int decimalPoints = (int) values[1];
 
         System.out.printf("Gerundete Zahl: %s", roundToNext(number));
         System.out.printf("\nAuf %s Nachkommastellen gerundete Zahl: %s", decimalPoints, roundDouble(number,
@@ -27,20 +27,20 @@ public class Main {
             factor *= 10;
         }
 
-        long temp = (long) (value * factor + 0.5);
+        int temp = (int) (value * factor + 0.5);
         return temp / factor;
     }
 
-    public static Double[] getUserInput() {
+    public static Object[] getUserInput() {
         try {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Gebe eine Kommazahl ein:");
             double number = scanner.nextDouble();
             System.out.println("Gebe die Anzahl der Nachkommastellen auf die gerundet werden soll an.");
-            double decimalPoints = scanner.nextDouble();
-            Double[] returnValues = new Double[2];
-            returnValues[0] = number;
-            returnValues[1] = decimalPoints;
+            int decimalPoints = scanner.nextInt();
+
+            // Verwenden Sie Object[], um sowohl double als auch int zurückzugeben
+            Object[] returnValues = new Object[]{number, decimalPoints};
             return returnValues;
         } catch (Exception exception) {
             throw new IllegalArgumentException("Ungültige Eingabe!");
